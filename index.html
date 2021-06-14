@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <title>Brightness</title>
+  </head>
+  <body>
+    <main class="main-content">
+      <div class="controlsContent" id="controls-content">
+        <div class="slider">
+          <p>Background Control</p>
+          <img class="icon-sun" src="./src/images/sun.svg" alt="sun icon" />
+
+          <input
+            class="input-range"
+            min="1"
+            max="255"
+            value="0"
+            step="1"
+            type="range"
+            name="bg_color"
+            id="bg_color"
+            aria-label="background conrol"
+          />
+        </div>
+        <div class="slider">
+          <p>Blur Control</p>
+          <img class="icon-sun" src="./src/images/sun.svg" alt="sun icon" />
+
+          <input
+            class="input-range"
+            min="1"
+            max="100"
+            value="0"
+            step="10"
+            type="range"
+            name="blur"
+            id="blur"
+            aria-label="blur control"
+          />
+        </div>
+        <div class="slider">
+          <p>Space Control</p>
+          <img class="icon-sun" src="./src/images/sun.svg" alt="sun icon" />
+
+          <input
+            class="input-range"
+            min="1"
+            max="100"
+            value="0"
+            step="10"
+            type="range"
+            name="space"
+            id="space"
+            data-id="space"
+            aria-label="space control"
+          />
+        </div>
+      </div>
+      <div class="imageContent">
+        <img
+          src="https://images.unsplash.com/photo-1623588677864-b351174ac199?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=756&q=80"
+          alt="image data"
+        />
+      </div>
+    </main>
+    <script>
+      // const $dot = document.getElementById('dot');
+      // $dot.addEventListener('click', function (e) {
+      //   console.log(this);
+      // });
+      // const $controlColor = document.getElementById('bg_color');
+      // $controlColor.addEventListener('input', function () {
+      // console.log(this.value);
+      // const value = (
+      //   ((this.value - this.min) / (this.max - this.min)) *
+      //   100
+      // ).toFixed(0);
+      // this.style.background =
+      //   'linear-gradient(to right, #10d5c2 0%, #10d5c2 ' +
+      //   value +
+      //   '%, #eaeefb ' +
+      //   value +
+      //   '%, #eaeefb 100%)';
+      // console.log(value);
+      // console.log('hello');
+      // });
+    </script>
+    <script src="./src/js/app.js"></script>
+  </body>
+</html>
