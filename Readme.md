@@ -1,5 +1,5 @@
 <div align="center">
-<img width="120px"  src="https://github.com/AlecANL/brightness-vanilla/blob/main/src/images/desing.png" />
+<img width="120px"  src="https://raw.githubusercontent.com/no-te-rindas/logo/main/Logo/LeonidasEsteban-destello-envolvente-cuadrada.png" />
 </div>
 
 # Brightness
@@ -9,7 +9,7 @@ Los slider están presentes en todo tipo de UI, con este reto podrás dominarlos
 ## Overview
 
 <div align="center">
-<img width="400px"  src="https://raw.githubusercontent.com/uxcristopher/imagenes/main/Readmes/brightness/desktop-brightness.jpg" />
+<img width="400px"  src="https://github.com/AlecANL/brightness-vanilla/blob/main/src/images/desing.png" />
 </div>
 
 ## Disclaimer
