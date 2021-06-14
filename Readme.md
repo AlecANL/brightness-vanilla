@@ -1,5 +1,5 @@
 <div align="center">
-<img width="120px"  src="https://raw.githubusercontent.com/no-te-rindas/logo/main/Logo/LeonidasEsteban-destello-envolvente-cuadrada.png" />
+<img width="120px"  src="https://github.com/AlecANL/brightness-vanilla/blob/main/src/images/desing.png" />
 </div>
 
 # Brightness
