@@ -1,7 +1,7 @@
 const $sliders = document.querySelectorAll('.input-range');
 const $sliderBgColor = document.getElementById('bg_color');
 const $sliderBlur = document.getElementById('blur');
-const $sliderSpace = document.getElementById('space');
+const $sliderRadius = document.getElementById('radius');
 const $cardControl = document.getElementById('controls-content');
 const $document = document.querySelector(':root');
 
@@ -13,7 +13,6 @@ const orangeColor = getVarialbesCSS('--just-orange');
 const sliderColor = getVarialbesCSS('--slider-color');
 
 function handleSlider(element, value) {
-  console.log(value);
   element.style.background = `
         linear-gradient(
             to right,
@@ -24,16 +23,6 @@ function handleSlider(element, value) {
         )
     `;
 }
-
-// $sliders.forEach(slider => {
-//   slider.addEventListener('input', function () {
-//     const value = (
-//       ((this.value - this.min) / (this.max - this.min)) *
-//       100
-//     ).toFixed(0);
-
-//   });
-// });
 
 function chancheColor(data) {
   const rgba = `rgba(${data},${data},${data},0.972)`;
@@ -46,7 +35,6 @@ function chancheColor(data) {
 
   $document.style.setProperty('--currentBackground', rgba);
   console.log('%cHello World', styles);
-  console.log(rgba);
 }
 
 function handleChangeColor() {
@@ -54,9 +42,29 @@ function handleChangeColor() {
     ((this.value - this.min) / (this.max - this.min)) *
     100
   ).toFixed(0);
-  console.log(value);
 
   handleSlider(this, value);
   chancheColor(value);
 }
+function changeBlur(value) {
+  const parsedValue = (value / 4).toFixed(0);
+  $document.style.setProperty('--currentBlur', `${parsedValue}px`);
+}
+
+function handleChangeBlur() {
+  handleSlider(this, this.value);
+  changeBlur(this.value);
+}
+
+function changeRadius(value) {
+  $document.style.setProperty('--currentRadius', `${value}%`);
+}
+
+function handleChangeRadius() {
+  handleSlider(this, this.value);
+  changeRadius(this.value);
+}
+
 $sliderBgColor.addEventListener('input', handleChangeColor);
+$sliderBlur.addEventListener('input', handleChangeBlur);
+$sliderRadius.addEventListener('input', handleChangeRadius);
